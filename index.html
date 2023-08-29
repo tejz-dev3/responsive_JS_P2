@@ -49,7 +49,7 @@
 
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                                <i class="uil uil-scenery nav__icon"></i> Projects
                             </a>
                         </li>
 
@@ -111,7 +111,7 @@
                                         Insert your image in the Img folder and Change your image |
                                         Center your image with X: horizontal, Y: vertical 
                                     ====================-->
-                                    <image class="home__blob-img" x="12" y="18" href="assets/img/perfil.png"/>
+                                    <image class="home__blob-img" x="12" y="-7" href="https://snipboard.io/lz4BeQ.jpg"/>
                                 </g>
                             </svg>
                         </div>
@@ -144,11 +144,12 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <img src="https://snipboard.io/9yG2ns.jpg" alt="" class="about__img"> 
 
                     <div class="about__data">
-                        <p class="about__description">Web developer, with extensive knowledge and years of 
-                            experience, working in web technologies and Ui / Ux design, delivering quality work.
+                        <p class="about__description">"Hello, I'm Tejaswini, a seasoned React.js developer with two years of hands-on experience in crafting dynamic and engaging web applications. 
+                            I'm driven by a passion for creating elegant solutions that merge creativity with functionality. 
+                            With a solid foundation in JavaScript, HTML, Redux, Hooks and CSS, I've honed my skills to deliver seamless user experiences.
                         </p>
 
                         <div class="about__info">
@@ -683,7 +684,8 @@
     
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Dynamic Portfolio</h3>
-                                <p class="portfolio__description">I designed and developed a dynamic portfolio website using JavaScript, demonstrating my expertise in frontend web development and creating visually appealing user interfaces. This project exemplifies my skills in crafting interactive web experiences and effectively presenting my work and accomplishments.</p>
+                                <p class="portfolio__description">I designed and developed a dynamic portfolio website using JavaScript, demonstrating my expertise in frontend web development and creating visually appealing user interfaces. 
+                                    This project exemplifies my skills in crafting interactive web experiences and effectively presenting my work and accomplishments.</p>
                                 <a href="https://enchanting-mooncake-f013cf.netlify.app/" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -724,13 +726,13 @@
                         <div class="project__data">
                             <h2 class="project__title">You have a new project</h2>
                             <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
-                            <a href="#" class="button button--flex button--white">
+                            <a href="#contact" class="button button--flex button--white">
                                 Contact Me
                                 <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
     
-                        <img src="assets/img/project.png" alt="" class="project__img">
+                        <img src="https://snipboard.io/9yG2ns.jpg" alt="" class="project__img">
                     </div>
                 </div>
             </section>
@@ -860,31 +862,32 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="contact.php" method="post" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" class="contact__input" name="name">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" class="contact__input" name="email">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label for="project" class="contact__label">Project</label>
+                            <input type="text" class="contact__input" name="project">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
+                            
                         </div>
                     </form>
                 </div>
